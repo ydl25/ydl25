@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<!-- 导航 -->
-		<nav class="navbar navbar-default ">
+		<nav id="navbar-example" class="navbar navbar-default ">
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -25,17 +25,19 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="#" class="head-a">自我评价</a></li>
-						<li><a href="#" class="head-a">项目经历</a></li>
-						<li><a href="#" class="head-a">教育背景</a></li>
-						<li><a href="#" class="head-a">奖励证书</a></li>
-						<li><a href="#" class="head-a">主修课程</a></li>
+						<li><a href="#evaluate" class="head-a">自我评价</a></li>
+						<li><a href="#project" class="head-a">项目经历</a></li>
+						<li><a href="#education" class="head-a">教育背景</a></li>
+						<li><a href="#reward" class="head-a">奖励证书</a></li>
+						<li><a href="#curriculum" class="head-a">主修课程</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>
+
 		<div class="container-fluid content">
 			<div class="container information">
+				<!-- 右边 -->
 				<div class="information-l">
 					<div class="basic-b">
 						<div class="portrait">
@@ -164,14 +166,14 @@
 				<!-- 左边内容 -->
 				<div class="information-r">
 					<!-- 评价 -->
-					<div class="rows evaluate">
+					<div class="rows evaluate" id="evaluate">
 						<div class="col-md-1 evaluate-b">
 							<div class="pj-l">
-								<hr class="hr1"/>
+								<hr class="hr1" />
 							</div>
 							<div class="pj-r">
 								自我评价
-								<hr class="hr2"/>
+								<hr class="hr2" />
 							</div>
 						</div>
 						<div class="col-md-1 evaluate-t">
@@ -179,14 +181,14 @@
 						</div>
 					</div>
 					<!-- 项目经历 -->
-					<div class="rows project">
+					<div class="rows project" id="project">
 						<div class="col-md-1 project-b">
 							<div class="jl-l">
-								<hr class="hr1"/>
+								<hr class="hr3" />
 							</div>
-							<div class="pj-r">
+							<div class="jl-r">
 								项目经历
-								<hr class="hr2"/>
+								<hr class="hr2" />
 							</div>
 						</div>
 						<div class="col-md-1 project-t">
@@ -197,20 +199,17 @@
 							<div class="jl-t">
 								在商品模块实现了分类迷糊查询、分页查询，增删改查商品等功能；用户管理模块实现了分类迷糊查询、添加、修改、重置密码、根据用户名禁用删除等功能；个人模块实现了修改信息、修改密码等功能；
 							</div>
-							<div class="jl-t">
-								有响应式的QQ音乐网页，工商银行的注册页面，广西大学的网页，京东app的移动端，携程app的静态移动端
-							</div>
 						</div>
 					</div>
 					<!-- 教育背景 -->
-					<div class="rows education">
+					<div class="rows education" id="education">
 						<div class="col-md-1 education-b">
 							<div class="jy-l">
-								<hr class="hr3"/>
+								<hr class="hr4" />
 							</div>
 							<div class="jy-r">
 								教育背景
-								<hr class="hr2"/>
+								<hr class="hr2" />
 							</div>
 						</div>
 						<div class="col-md-1 education-t">
@@ -226,39 +225,70 @@
 						</div>
 					</div>
 					<!-- 奖励证书 -->
-					<div class="rows reward">
-						<div class="col-md-1 reward-b">
+					<div class="rows reward" id="reward">
+						<div class="col-md-1 reward-l">
 							<div class="zs-l">
-								<hr class="hr3"/>
+								<hr class="hr4" />
 							</div>
 							<div class="zs-r">
 								奖励证书
-								<hr class="hr2"/>
+								<hr class="hr2" />
 							</div>
 						</div>
-						<div class="col-md-1 reward-t">
+						<div class="col-md-1 reward-r">
 							2019 -------第三届广西水利电力职业技术学院“厚溥杯”工作过程知识竞赛优秀奖
 						</div>
 					</div>
 					<!-- 主修课程 -->
-					<div class="rows curriculum">
-						<div class="col-md-1 curriculum-b">
+					<div class="rows curriculum" id="curriculum">
+						<div class="col-md-1 curriculum-l">
 							<div class="kc-l">
-								<hr class="hr3"/>
+								<hr class="hr4" />
 							</div>
 							<div class="kc-r">
 								主修课程
-								<hr class="hr2"/>
+								<hr class="hr2" />
 							</div>
 						</div>
-						<div class="col-md-1 curriculum-t">
+						<div class="col-md-1 curriculum-r">
 							PHP、mysql、JavaScript、jQuery、HTML5、CSS3、PS、Axure、XMind、
 						</div>
 					</div>
 				</div>
 			</div>
+			<!-- 我的作品 -->
+			<!-- <div class="works">
+				<div class="container works-container">
+					<h2 class="font-weight-bold">我的作品</h2>
+					<ul class="nav nav-pills" id="pills-tab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+							 aria-selected="true">网页</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" id="pills-desserts-tab" data-toggle="pill" href="#pills-desserts" role="tab" aria-controls="pills-desserts"
+							 aria-selected="false">甜点</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" id="pills-app-tab" data-toggle="pill" href="#pills-app" role="tab" aria-controls="pills-app"
+							 aria-selected="false">APP</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane">
+							<div class="tab-pane-home">
+								<img src="img/QQyy.png">
+							</div>
+							<div class="tab-pane-home">
+								<img src="img/xc.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
 		</div>
 	</body>
 	<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 </html>

@@ -9,9 +9,9 @@
 	margin-bottom: 0px;
 	border-radius: 0px;
 	position: fixed;
-    top: 0px;
-    z-index: 100;
-    width: 100%;
+	top: 0px;
+	z-index: 100;
+	width: 100%;
 }
 
 .navbar-default .navbar-brand:hover {
@@ -27,17 +27,19 @@
 	background-color: #f9c77d;
 	width: 100%;
 	height: 1000px;
+	padding: 0px;
+	margin: 0px;
 }
 
 .information {
-	height: 95%;
+	height: 90%;
 	background-color: #fff;
 	margin: 0 auto;
 	padding: 0px;
 	display: flex;
 	flex-direction: row;
 	position: relative;
-    top: 52px;
+	top: 53px;
 }
 
 .information-l {
@@ -301,14 +303,15 @@
 }
 
 /* 左边内容 */
+/* 评价 */
 .evaluate {
 	width: 100%;
-	height: 20%;
+	height: 25%;
 }
 
 .evaluate-b {
 	width: 100%;
-	height: 35%;
+	height: 30%;
 	display: flex;
 	flex-direction: row;
 }
@@ -337,14 +340,15 @@
 	height: 65%;
 }
 
+/* 项目经历 */
 .project {
 	width: 100%;
-	height: 30%;
+	height: 27%;
 }
 
 .project-b {
 	width: 100%;
-	height: 20%;
+	height: 24%;
 	display: flex;
 	flex-direction: row;
 }
@@ -352,9 +356,20 @@
 .project-t {
 	width: 100%;
 	font-size: 18px;
-	height: 75%;
+	height: 80%;
 }
 
+.jl-r {
+	width: 50%;
+	height: 100%;
+	font-size: 18px;
+	color: #3e6dc1;
+	margin: 17px 0px 0px 10px;
+	font-weight: bold;
+	font-family: 阿里汉仪智能黑体;
+}
+
+/* 教育背景 */
 .education {
 	width: 100%;
 	height: 15%;
@@ -362,9 +377,9 @@
 
 .education-b {
 	width: 100%;
-    height: 30%;
-    display: flex;
-    flex-direction: row;
+	height: 30%;
+	display: flex;
+	flex-direction: row;
 }
 
 .education-t {
@@ -373,16 +388,25 @@
 	height: 70%;
 }
 
+.jy-l {
+	width: 50%;
+	height: 100%;
+	background: url(../img/教育.png) no-repeat;
+	background-position: right;
+	background-size: 10%;
+}
+
 .jy-r {
 	width: 50%;
 	height: 100%;
 	font-size: 18px;
 	color: #3e6dc1;
-	margin: 5px 0px 0px 10px;
+	margin: 10px 0px 0px 10px;
 	font-weight: bold;
 	font-family: 阿里汉仪智能黑体;
 }
 
+/* 奖励证书 */
 .jl-l {
 	width: 50%;
 	height: 100%;
@@ -393,28 +417,14 @@
 
 .reward {
 	width: 100%;
-    height: 15%;
+	height: 15%;
 }
 
-.reward-b {
+.reward-l {
 	width: 100%;
-    height: 35%;
-    display: flex;
-    flex-direction: row;
-}
-
-.reward-t {
-	width: 100%;
-	font-size: 18px;
-	height: 60%;
-}
-
-.jy-l {
-	width: 50%;
-	height: 100%;
-	background: url(../img/教育.png) no-repeat;
-	background-position: right;
-	background-size: 10%;
+	height: 30%;
+	display: flex;
+	flex-direction: row;
 }
 
 .zs-l {
@@ -430,37 +440,28 @@
 	height: 100%;
 	font-size: 18px;
 	color: #3e6dc1;
-	margin: 7px 0px 0px 10px;
+	margin: 5px 0px 0px 8px;
 	font-weight: bold;
 	font-family: 阿里汉仪智能黑体;
 }
 
+.reward-r {
+	width: 100%;
+	font-size: 18px;
+	height: 70%;
+}
+
+/* 主修课程 */
 .curriculum {
 	width: 100%;
-	height: 10%;
+	height: 15%;
 }
 
-.curriculum-b {
+.curriculum-l {
 	width: 100%;
-	height: 50%;
+	height: 30%;
 	display: flex;
 	flex-direction: row;
-}
-
-.curriculum-t {
-	width: 100%;
-	font-size: 18px;
-	height: 60%;
-}
-
-.kc-r {
-	width: 50%;
-	height: 100%;
-	font-size: 18px;
-	color: #3e6dc1;
-	margin: 7px 0px 0px 10px;
-	font-weight: bold;
-	font-family: 阿里汉仪智能黑体;
 }
 
 .kc-l {
@@ -471,21 +472,75 @@
 	background-size: 10%;
 }
 
-.hr1{
-	border-top: 1px solid #090909;
-    margin: 40px 0px 0px 25px;
-    width: 80%;
+.kc-r {
+	width: 50%;
+	height: 100%;
+	font-size: 18px;
+	color: #3e6dc1;
+	margin: 8px 0px 0px 10px;
+	font-weight: bold;
+	font-family: 阿里汉仪智能黑体;
 }
 
-.hr2{
-	border-top: 1px solid #090909;
-    width: 70%;
-    margin: -10px 0px 0px 78px;
+.curriculum-r {
+	width: 100%;
+	font-size: 18px;
+	height: 70%;
 }
 
-.hr3{
+.hr1 {
 	border-top: 1px solid #090909;
-	width: 75%;
-    margin: 21px 0px 0px 45px;
+	margin: 35px 0px 0px 20px;
+	width: 80%;
 }
 
+.hr2 {
+	border-top: 1px solid #090909;
+	width: 70%;
+	margin: -13px 0px 0px 78px;
+}
+
+.hr3 {
+	border-top: 1px solid #090909;
+	width: 80%;
+	margin: 30px 0px 0px 20px;
+}
+
+.hr4 {
+	border-top: 1px solid #090909;
+	width: 80%;
+	margin: 21px 0px 0px 25px;
+}
+
+/* 我的作品 */
+.works {
+	width: 100%;
+	height: 100%;
+	background-color: #f9c77d;
+}
+
+.works-container {
+	height: 100%;
+}
+
+.tab-content>.tab-pane {
+	display: inherit;
+}
+
+.tab-pane {
+	width: 100%;
+	height: 83%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.tab-pane-home {
+	width: 33%;
+	height: 100%;
+	float: left;
+}
+
+.tab-pane-home img {
+	width: 100%;
+}
